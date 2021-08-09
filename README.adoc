@@ -68,7 +68,7 @@ If you just want to explore the SDK you'll find a test configuration in `sample-
 * Android 6.0 (API 23) to Android 11 (API 30)
 * Kotlin 1.4.32
 * Java 8 link:https://developer.android.com/studio/write/java8-support[Limitations] link:https://jakewharton.com/d8-library-desugaring/[Desugaring]
-* Gradle 6.8.3
+* Gradle 6.9
 
 === Dependencies
 
@@ -375,3 +375,26 @@ Every project module has a `{module-name}/src/docs/asciidoc` folder where all do
 
 ==== Generating the documentation
 To generate the latest documentation just call `./gradlew asciidoctor` this will build the `sdk-doc` module and replace the documentation for the current SDK version in the `docs` folder.
+
+
+== Changelog
+
+See link:CHANGELOG.adoc[changelog]
+
+== Versioning
+
+We use http://semver.org/[Semantic Versioning] as a guideline for our versioning.
+
+Releases use this format: `{major}.{minor}.{patch}`
+
+* Breaking changes bump `{major}` and reset `{minor}` & `{patch}`
+* Backward compatible changes bump `{minor}` and reset `{patch}`
+* Bug fixes bump `{patch}`
+
+== Contributing
+
+You want to help or share a proposal? You have a specific problem? Read the following:
+
+* link:CODE-OF-CONDUCT.adoc[Code of conduct] for details on our code of conduct.
+* link:CONTRIBUTING.adoc[Contributing] for details about how to report bugs and propose features.
+* link:DEVELOPING.adoc[Developing] for details about our development process and how to build and test the project.
